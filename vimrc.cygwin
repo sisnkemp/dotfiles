@@ -1,0 +1,29 @@
+set nocompatible
+syn on
+set ruler
+set bg=dark
+set number
+set cindent
+set cinoptions=:0,g0,+4,(0
+set hlsearch
+set vb
+set backspace=2
+filetype plugin on
+set showcmd
+set tags+=./tags;
+set path+=*/include;
+set foldcolumn=2
+set foldmethod=syntax
+set foldlevel=20
+set noexpandtab
+set cursorline
+set laststatus=2
+
+hi clear
+hi Search term=reverse ctermbg=6 guibg=Cyan
+
+"inoremap {{ {<CR>}<Esc>O
+"inoremap }} {<CR>};<Esc>O
+"inoremap {E {<CR>} else {<CR>}<Esc>kO
+
+let g:netrw_bufsettings= 'noma nomod nowrap ro nobl'
